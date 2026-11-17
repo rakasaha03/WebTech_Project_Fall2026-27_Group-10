@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Customer Registration | CineBook</title>
+<link rel="stylesheet" href="../Design/customer-style.css">
+<link rel="stylesheet" href="CSS/customer.css"></head>
+<body><header><a class="brand" href="../index.html">Cine<span>Book</span></a><span class="tagline">Your movie night starts here</span></header>
+<nav><a href="../index.html">Home</a><a href="CustomerLogin.html">Customer Login</a><a href="CustomerRegistration.html">Register</a><a href="Movies.html">Movies</a><a href="Booking.html">Book Tickets</a></nav><main>
+<section class="panel"><h1>Create Your Account</h1><p class="muted">Join CineBook and get ready for your next movie.</p>
+<form id="customerRegisterForm"><div class="form-grid">
+<div><label for="fullName">Full Name</label><input id="fullName" required placeholder="Enter your full name"></div>
+<div><label for="email">Email Address</label><input id="email" type="email" required placeholder="Enter your email"></div>
+<div><label for="phone">Phone Number</label><input id="phone" type="tel" required placeholder="Enter your phone number"></div>
+<div><label for="age">Age</label><input id="age" type="number" min="1" max="120" required placeholder="Enter your age"></div>
+<div><label for="password">Password</label><input id="password" type="password" minlength="6" required placeholder="At least 6 characters"></div>
+<div><label for="confirmPassword">Confirm Password</label><input id="confirmPassword" type="password" required placeholder="Enter password again"></div>
+</div><button type="submit">Create Account</button><div id="message" class="message"></div></form>
+<p class="muted">Already have an account? <a href="CustomerLogin.html">Sign in</a></p>
+</section></main><footer>CineBook · Enjoy the show</footer>
+<script src="JS/customer.js"></script></body></html>

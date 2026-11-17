@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Manager Home</title>
+        <link rel="stylesheet" href="../Design/Style.css">
+        <script src="../JS/Manager.js"></script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Manager Home</h1>
+            <p>Welcome, Manager</p>
+        </div>
+
+        <div class="topnav">
+            <a href="ManagerHome.html" class="active">Home</a>
+            <a href="../index.html" onclick="return logout()">Logout</a>
+        </div>
+
+        <fieldset>
+            <legend>Today's Summary</legend>
+            <table>
+                <tr>
+                    <td>Movies Running:</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Total Shows:</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Tickets Sold:</td>
+                    <td>248</td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Ongoing Shows</legend>
+            <div class="movie-grid">
+
+                <div class="movie">
+                    <img src="../Images/inception.jpg" alt="Inception">
+                    <h3>Inception</h3>
+                    <p>12:00 PM</p>
+                </div>
+
+                <div class="movie">
+                    <img src="../Images/interstellar.jpg" alt="Interstellar">
+                    <h3>Interstellar</h3>
+                    <p>03:00 PM</p>
+                </div>
+
+                <div class="movie">
+                    <img src="../Images/darkknight.jpg" alt="The Dark Knight">
+                    <h3>The Dark Knight</h3>
+                    <p>06:00 PM</p>
+                </div>
+
+                <div class="movie">
+                    <img src="../Images/avatar.jpg" alt="Avatar">
+                    <h3>Avatar</h3>
+                    <p>09:00 PM</p>
+                </div>
+
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Show Schedule</legend>
+            <table class="list">
+                <tr>
+                    <th>Hall</th>
+                    <th>Movie</th>
+                    <th>Time</th>
+                    <th>Ticket Price</th>
+                    <th>Seats Left</th>
+                </tr>
+                <tr>
+                    <td>Hall 1</td>
+                    <td>Inception</td>
+                    <td>12:00 PM</td>
+                    <td>400 BDT</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>Hall 2</td>
+                    <td>Interstellar</td>
+                    <td>03:00 PM</td>
+                    <td>400 BDT</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Hall 1</td>
+                    <td>The Dark Knight</td>
+                    <td>06:00 PM</td>
+                    <td>500 BDT</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Hall 2</td>
+                    <td>Avatar</td>
+                    <td>09:00 PM</td>
+                    <td>500 BDT</td>
+                    <td>48</td>
+                </tr>
+            </table>
+        </fieldset>
+    </body>
+</html>

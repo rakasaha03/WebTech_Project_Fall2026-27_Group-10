@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CineBook - Login</title>
+        <link rel="stylesheet" href="Design/Style.css">
+        <script src="JS/Login.js"></script>
+    </head>
+
+    <body>
+        <img src="Images/ticket.png" id="logo" alt="CineBook Ticket">
+
+        <div class="header">
+            <h1>CineBook</h1>
+            <p>Cinema Ticket Booking System</p>
+        </div>
+
+        
+        <div class="login-box">
+            <h2>Login</h2>
+
+            <form onsubmit="return validateLoginForm()" novalidate>
+                <input type="email" id="Email" placeholder="Email">
+                <p class="error" id="EmailError"></p>
+
+                <input type="password" id="Password" placeholder="Password">
+                <p class="error" id="PasswordError"></p>
+
+                <p id="ResultText"></p>
+
+                <input type="submit" id="submit" value="Login">
+            </form>
+        </div>
+    </body>
+</html>

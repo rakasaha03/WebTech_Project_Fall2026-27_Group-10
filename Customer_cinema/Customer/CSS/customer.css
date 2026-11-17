@@ -1,0 +1,62 @@
+
+.customer-login-panel{
+    border-top:5px solid #e97859;
+    box-shadow:0 12px 30px #17494b18;
+}
+
+.customer-login-panel h1{
+    margin:0 0 8px;
+    font-size:30px;
+}
+
+.customer-login-panel form{
+    margin-top:24px;
+}
+
+.customer-login-panel label{
+    letter-spacing:.2px;
+}
+
+.customer-login-panel input{
+    transition:border-color .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+
+.customer-login-panel input:hover{
+    border-color:#9bd4ca;
+    background:#fbfefd;
+}
+
+.customer-login-panel input:focus{
+    box-shadow:0 0 0 4px #9bd4ca40;
+}
+
+.customer-login-panel button{
+    width:100%;
+    transition:background-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+.customer-login-panel button:hover{
+    transform:translateY(-1px);
+    box-shadow:0 5px 12px #cf624740;
+}
+
+.customer-login-panel .muted a{
+    color:#1b6263;
+    font-weight:700;
+    text-decoration:none;
+}
+
+.customer-login-panel .muted a:hover{
+    color:#e97859;
+    text-decoration:underline;
+}
+
+@media(max-width:620px){
+    .customer-login-panel{
+        padding:22px;
+    }
+
+    .customer-login-panel h1{
+        font-size:26px;
+    }
+}

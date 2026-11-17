@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Customer Login | CineBook</title>
+
+    <link rel="stylesheet" href="../Design/customer-style.css">
+    <link rel="stylesheet" href="CSS/customer.css">
+</head>
+
+<body>
+
+    <header>
+        <a class="brand" href="../index.html">
+            Cine<span>Book</span>
+        </a>
+
+        <span class="tagline">Your movie night starts here</span>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="CustomerLogin.html">Customer Login</a>
+        <a href="CustomerRegistration.html">Register</a>
+        <a href="Movies.html">Movies</a>
+        <a href="Booking.html">Book Tickets</a>
+    </nav>
+
+    <main>
+
+        <section class="panel customer-login-panel">
+
+            <h1>Welcome Back</h1>
+
+            <p class="muted">
+                Sign in to explore movies and book your tickets.
+            </p>
+
+            <form id="customerLoginForm">
+
+                <label for="email">Email Address</label>
+                <input
+                    id="email"
+                    type="email"
+                    required
+                    placeholder="Enter your email"
+                >
+
+                <label for="password">Password</label>
+                <input
+                    id="password"
+                    type="password"
+                    required
+                    placeholder="Enter your password"
+                >
+
+                <button type="submit">Sign In</button>
+
+                <div id="message" class="message"></div>
+
+            </form>
+
+            <p class="muted">
+                New to CineBook?
+                <a href="CustomerRegistration.html">Create an account</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        CineBook · Enjoy the show
+    </footer>
+
+    <script src="JS/customer.js"></script>
+
+</body>
+
+</html>

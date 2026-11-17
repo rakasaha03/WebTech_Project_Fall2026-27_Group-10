@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Tickets | CineBook</title>
+
+    <link rel="stylesheet" href="../Design/customer-style.css">
+    <link rel="stylesheet" href="CSS/customer.css">
+</head>
+
+<body>
+
+    <header>
+
+        <a class="brand" href="../index.html">
+            Cine<span>Book</span>
+        </a>
+
+        <span class="tagline">Your movie night starts here</span>
+
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="CustomerLogin.html">Customer Login</a>
+        <a href="CustomerRegistration.html">Register</a>
+        <a href="Movies.html">Movies</a>
+        <a href="Booking.html">Book Tickets</a>
+    </nav>
+
+    <main>
+
+        <section class="panel">
+
+            <h1>Book Your Tickets</h1>
+
+            <p class="muted">
+                Choose your movie and showtime. No seat selection is required.
+            </p>
+
+            <form id="bookingForm">
+
+                <label for="movie">Select Movie</label>
+
+                <select id="movie" required>
+                    <option value="">Choose a movie</option>
+                    <option>Your Name</option>
+                    <option>Titanic</option>
+                    <option>The Wild Robot</option>
+                    <option>Murgi Chor</option>
+                    <option>Frozen II</option>
+                    <option>Mulan</option>
+                </select>
+
+                <label for="showDate">Show Date</label>
+
+                <input
+                    id="showDate"
+                    type="date"
+                    required
+                >
+
+                <label for="showTime">Showtime</label>
+
+                <select id="showTime" required>
+                    <option value="">Choose a showtime</option>
+                    <option>11:00 AM</option>
+                    <option>2:00 PM</option>
+                    <option>5:00 PM</option>
+                    <option>8:00 PM</option>
+                </select>
+
+                <label for="quantity">Number of Tickets</label>
+
+                <input
+                    id="quantity"
+                    type="number"
+                    min="1"
+                    max="10"
+                    value="1"
+                    required
+                >
+
+                <button type="submit">Continue</button>
+
+                <div id="message" class="message"></div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        CineBook · Enjoy the show
+    </footer>
+
+    <script src="JS/customer.js"></script>
+
+</body>
+
+</html>
