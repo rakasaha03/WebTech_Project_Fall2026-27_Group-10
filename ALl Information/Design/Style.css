@@ -1,0 +1,74 @@
+/* ===== General ===== */
+* {
+  box-sizing: border-box;      /* padding doesn't increase element size */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;   /* light grey background */
+  color: #333;
+}
+
+/* ===== Header ===== */
+.header {
+  background-color: #1e293b;   /* dark blue */
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.header h1 {
+  margin: 0 0 10px;
+}
+
+/* ===== Cards layout (CSS Grid) ===== */
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* responsive columns */
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ===== Single card ===== */
+.user-card {
+  background-color: white;
+  padding: 24px;
+  text-align: center;
+  border-radius: 10px;
+  border-top: 6px solid #888;               /* colored line on top */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;               /* smooth hover */
+}
+
+.user-card:hover {
+  transform: translateY(-5px);              /* card lifts up slightly */
+}
+
+.user-card h2 {
+  margin-top: 0;
+}
+
+/* Different color for each user type */
+.admin    { border-top-color: #e74c3c; }   /* red */
+.manager  { border-top-color: #f39c12; }   /* orange */
+.customer { border-top-color: #27ae60; }   /* green */
+.account  { border-top-color: #3498db; }   /* blue */
+
+/* ===== Button ===== */
+.user-btn {
+  background-color: #1e293b;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.user-btn:hover {
+  background-color: #3b82f6;   /* changes color when mouse is over */
+}
+
