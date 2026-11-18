@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinema Management - Employee Module</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">CINEMA<span>HUB</span></div>
+    <p class="menu-label">MAIN MENU</p>
+    <a class="nav-link" href="#" aria-label="Dashboard">▦ &nbsp; Dashboard</a>
+    <a class="nav-link active" href="#">♙ &nbsp; Employee Management</a>
+    <a class="nav-link" href="#">▣ &nbsp; Movie Management</a>
+    <a class="nav-link" href="#">▤ &nbsp; Ticket Management</a>
+    <a class="nav-link" href="#">♧ &nbsp; Customer Management</a>
+    <div class="sidebar-note">Cinema Management System<br><small>Employee module</small></div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">ADMINISTRATION</p>
+        <h1>Employee Management</h1>
+        <p class="subheading">Manage your cinema staff and employee records.</p>
+      </div>
+      <div class="admin-chip"><span class="avatar">A</span><span>Administrator</span></div>
+    </header>
+
+   <section class="stats">
+      <article class="stat-card"><div class="stat-icon blue">♙</div><div><p>Total Employees</p><strong id="totalEmployees">0</strong></div></article>
+      <article class="stat-card"><div class="stat-icon green">✓</div><div><p>Active Employees</p><strong id="activeEmployees">0</strong></div></article>
+      <article class="stat-card"><div class="stat-icon orange">Ⅱ</div><div><p>Inactive Employees</p><strong id="inactiveEmployees">0</strong></div></article>
+    </section> 
+	
+
+    <section class="panel">
+      <div class="panel-heading">
+        <div><h2>Employee Directory</h2><p>View, add, update, and remove cinema employees.</p></div>
+        <button class="primary-btn" id="addEmployeeBtn">＋ Add Employee</button>
+      </div>
+      <div class="toolbar">
+        <input id="searchInput" type="search" placeholder="Search by name, ID, email or position..." aria-label="Search employees">
+        <select id="statusFilter" aria-label="Filter by status">
+          <option value="all">All statuses</option>
+          <option value="Active">Active</option>
+          <option value="Inactive">Inactive</option>
+        </select>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>EMPLOYEE</th><th>PHONE</th><th>POSITION</th><th>SALARY</th><th>JOINING DATE</th><th>STATUS</th><th>ACTIONS</th></tr></thead>
+          <tbody id="employeeTable">
+            <tr><td colspan="7" class="empty">No employees yet. Select “Add Employee” to create your first record.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="footnote">Data is saved in this browser using LocalStorage. It is a frontend demo, not a shared database.</p>
+    </section>
+  </main>
+
+  <dialog id="employeeDialog">
+    <form id="employeeForm">
+      <div class="dialog-heading"><div><p class="eyebrow">EMPLOYEE RECORD</p><h2 id="dialogTitle">Add Employee</h2></div><button type="button" class="close-btn" id="closeDialog" aria-label="Close">×</button></div>
+      <input type="hidden" id="employeeId">
+      <div class="form-grid">
+        <label>Full name *<input id="name" required maxlength="60" placeholder="e.g. Rahim Ahmed"></label>
+        <label>Phone number *<input id="phone" required type="tel" maxlength="20" placeholder="01XXXXXXXXX"></label>
+        <label>Email address *<input id="email" required type="email" maxlength="80" placeholder="name@example.com"></label>
+        <label>Position *
+          <select id="position" required>
+            <option value="">Select position</option>
+            <option>Manager</option><option>Ticket Seller</option><option>Cashier</option>
+            <option>Security Guard</option><option>Projectionist</option><option>Cleaner</option><option>Customer Support</option>
+          </select>
+        </label>
+        <label>Monthly salary (৳) *<input id="salary" required type="number" min="0" step="1" placeholder="e.g. 18000"></label>
+        <label>Joining date *<input id="joiningDate" required type="date"></label>
+        <label>Status
+          <select id="status"><option>Active</option><option>Inactive</option></select>
+        </label>
+      </div>
+      <div class="dialog-actions"><button type="button" class="secondary-btn" id="cancelBtn">Cancel</button><button type="submit" class="primary-btn">Save Employee</button></div>
+    </form>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
